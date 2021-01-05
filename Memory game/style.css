@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(208, 92, 236);
+}
+
+.controls {
+  background-color: rgb(114, 0, 114);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+button {
+  text-transform: capitalize;
+  background-color: rgba(0, 255, 0, 0.781);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memory-body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+
+.hard-mode {
+  display: none;
+}
+
+.memory-game {
+  width: 40%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  position: relative;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  cursor: pointer;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.4s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid black;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.hide {
+  display: none;
+}
+
+h4 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+
+@media (max-width: 1024px) {
+  .memory-game {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+  .memory-body {
+    background-color: rgb(133, 0, 0);
+    height: 90vh;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: rgba(128, 0, 0, 0.493);
+  }
+  button:hover {
+    background-color: rgb(128, 0, 0);
+  }
+
+  .memory-game {
+    width: 90%;
+    height: 50%;
+  }
+}

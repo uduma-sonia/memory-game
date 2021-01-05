@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Memory game</title>
+  </head>
+  <body>
+    <div class="controls">
+      <h1>memory game</h1>
+      <button id="reset">RESET</button>
+      <button onclick="easyM()">easy</button>
+      <a href="#hard1">
+        <button class="hardBtn" onclick="hardM()">hard</button>
+      </a>
+    </div>
+    <div class="memory-body">
+      <section class="memory-game">
+        <div class="memory-card" data-framework="bicycle">
+          <img class="front-face" src="img/bicycle.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="bicycle">
+          <img class="front-face" src="img/bicycle.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="kite">
+          <img class="front-face" src="img/kite.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="kite">
+          <img class="front-face" src="img/kite.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="bulb">
+          <img class="front-face" src="img/bulb.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="bulb">
+          <img class="front-face" src="img/bulb.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="dice">
+          <img class="front-face" src="img/dice.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="dice">
+          <img class="front-face" src="img/dice.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="react">
+          <img class="front-face" src="img/react.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="react">
+          <img class="front-face" src="img/react.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="flower">
+          <img class="front-face" src="img/flower.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card" data-framework="flower">
+          <img class="front-face" src="img/flower.jpg" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+
+        <!-- HARD MODE -->
+        <div class="memory-card hard-mode" id="hard1" data-framework="house">
+          <img class="front-face" src="img/house.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div class="memory-card hard-mode" id="hard2" data-framework="house">
+          <img class="front-face" src="img/house.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div
+          class="memory-card hard-mode"
+          id="hard3"
+          data-framework="lightning"
+        >
+          <img class="front-face" src="img/lightning.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+        <div
+          class="memory-card hard-mode"
+          id="hard4"
+          data-framework="lightning"
+        >
+          <img class="front-face" src="img/lightning.png" alt="" />
+          <img class="back-face" src="img/clover.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <script src="memory.js"></script>
+  </body>
+</html>
